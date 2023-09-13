@@ -2,42 +2,90 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Домашнее задание №1</title>
 </head>
 <body>
 <ul>
-	<li><a id = "about" href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a><p></li>
-	<li><a href="https://www.kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https;</a><p></li>
-	<li><img src="00b924642eefaf42c33da9207c2fff5c.jpg" style="width: 500px;" alt=" "></li>
-	<li><a href="/vnytri.html">Сокращенную ссылку на внутреннюю страницу</a><p></li>
-	<li><a href="/index.html">Сокращенную ссылку на главную страницу</a><p></li>
-	<li><a href="#about">Ссылку на фрагмент текущей страницы</a><p></li>
-	<li><a href="https://moodle.kubsu.ru/course/view.php?id=780?params1=value1&params2=value2&params3=value3">Ссылку с тремя параметрами в URL</a><p></li>
-	<li><a href="https://www.kubsu.ru#privet">Ссылку с параметром id в URL</li></a><p>
-	<li><a href="oth.html">Относительную на страницу в текущем каталоге</li></a><p>
-	<li><a href="./about/smotr.html">Относительную на страницу в каталоге about</li></a><p>
-	<li><a href="./about/smotr.html">Относительную на страницу в каталоге уровнем выше текущего</li></a><p>
-	<li><a href="./about/two/smo.html">Относительную на страницу в каталоге двумя уровнями выше</li></a><p>
-	<li>Контекстную в<a href="https://www.kubsu.ru">тексте абзаца</li></a><p>
-	<li><a href="https://www.kubsu.ru/#section-conect">Ссылку на фрагмент страницы стороннего сайта</a><p></li>
-	<li>Ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</li>
-	<a href=""><img src="квадрат.jpg" usemap="#Map" width="200px" height="200px"></a><p>
-	<a href=""><img src="Круг.png" usemap="#2Map" width="200px" height="200px"></a><p>
+	<li>
+        <a href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;
+        </a>
+    </li>
+	<li>
+        <a href="https://www.kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https;
+        </a>
+    </li>
+	<li>
+        <img src="/images/image.jpg" alt="image" width="300" height="200">
+    </li>
+	<li>
+        <a href="/vnytri.html">Сокращенную ссылку на внутреннюю страницу
+        </a>
+    </li>
+	<li>
+        <a href="/index.html">Сокращенную ссылку на главную страницу
+        </a>
+    </li>
+	<li>
+        <a href="#about">Ссылку на фрагмент текущей страницы
+        </a>
+    </li>
+	<li>
+        <a href="https://moodle.kubsu.ru/course/view.php?id=780?params1=value1&params2=value2&params3=value3">Ссылку с тремя параметрами в URL
+        </a>
+    </li>
+	<li>
+        <a href="https://www.kubsu.ru#privet">Ссылку с параметром id в URL
+        </a>
+    </li>
+	<li>
+        <a href="oth.html">Относительную на страницу в текущем каталоге
+        </a>
+    </li>
+	<li>
+        <a href="./about/smotr.html">Относительную на страницу в каталоге about
+        </a>
+    </li>
+	<li>
+        <a href="./about/smotr.html">Относительную на страницу в каталоге уровнем выше текущего
+        </a>
+    </li>
+	<li>
+        <a href="./about/two/smo.html">Относительную на страницу в каталоге двумя уровнями выше
+        </a>
+    </li>
+	<li>Контекстную в<a href="https://www.kubsu.ru">тексте абзаца
+    </a>
+    </li>
+	<li>
+        <a href="https://www.kubsu.ru/#section-conect">Ссылку на фрагмент страницы стороннего сайта</a>
+    </li>
+	<li>
+    Ссылки из прямоугольных и круглых областей картинки (HTML-тег map)
+    </li>
+	<a href=""><img src="квадрат.jpg" usemap="#Map" width="200px" height="200px">
+    </a>
+	<a href=""><img src="Круг.png" usemap="#2Map" width="200px" height="200px">
+    </a>
 		<map id="Map" name="Имя">
-			<area shape="rect" coords="100,0,200,150" href="https://moodle.kubsu.ru/course/view.php?id=780"></map>
-		<map id="2Map" name="Имя"><area shape="circle" coords="100,100,75" href="https://moodle.kubsu.ru/course/view.php?id=780"></map>
-	<li><a href="">Ссылку с пустым href</li><p>
+			<area shape="rect" coords="100,0,200,150" href="https://moodle.kubsu.ru/course/view.php?id=780">
+        </map>
+		<map id="2Map" name="Имя"><area shape="circle" coords="100,100,75" href="https://moodle.kubsu.ru/course/view.php?id=780">
+        </map>
+	<li>
+        <a href="">Ссылку с пустым href
+        </li>
     <li>
-        <a>Ссылка без href</a><p>
+        <a>Ссылка без href</a>
     </li>
     <li>
-        <a href="https://kubsu.ru/" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a><p>
+        <a href="https://kubsu.ru/" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a>
     </li>
     <li>
         <!--noindex--><a href="https://kubsu.ru/%22%3E">Ссылка по которой нельзя индексировать яндексу</a><!--/noindex-->
     </li>
     <li>
-        <p>Список ссылок навигации сайта</p>
+        Список ссылок навигации сайта
         <nav>
             <ol>
                 <li><a href="/index.html" title="task">Ссылки</a></li>
