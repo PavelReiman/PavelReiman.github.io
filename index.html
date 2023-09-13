@@ -1,101 +1,116 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Домашнее задание №1</title>
-</head>
-<body>
-<ul>
-	<li>
-        <a href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;
-        </a>
-    </li>
-	<li>
-        <a href="https://www.kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https;
-        </a>
-    </li>
-	<li>
-        <img src="/images/image.jpg" alt="image" width="300" height="200">
-    </li>
-	<li>
-        <a href="/vnytri.html">Сокращенную ссылку на внутреннюю страницу
-        </a>
-    </li>
-	<li>
-        <a href="/index.html">Сокращенную ссылку на главную страницу
-        </a>
-    </li>
-	<li>
-        <a href="#about">Ссылку на фрагмент текущей страницы
-        </a>
-    </li>
-	<li>
-        <a href="https://moodle.kubsu.ru/course/view.php?id=780?params1=value1&params2=value2&params3=value3">Ссылку с тремя параметрами в URL
-        </a>
-    </li>
-	<li>
-        <a href="https://www.kubsu.ru#privet">Ссылку с параметром id в URL
-        </a>
-    </li>
-	<li>
-        <a href="oth.html">Относительную на страницу в текущем каталоге
-        </a>
-    </li>
-	<li>
-        <a href="./about/smotr.html">Относительную на страницу в каталоге about
-        </a>
-    </li>
-	<li>
+    <title>Ссылки</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a>
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https;</a
+        >
+      </li>
+      <li>
+        <a href="/images/image.jpg"
+          ><img src="/images/image.jpg" alt="image" width="300" height="200"
+        /></a>
+      </li>
+      <li>
+        <a href="/vnytri.html">Сокращенную ссылку на внутреннюю страницу</a>
+      </li>
+      <li><a href="./index.html">сокращенную ссылку на главную страницу</a></li>
+      <li><a href="#about">Ссылку на фрагмент текущей страницы</a></li>
+      <li>
+        <a href="https://moodle.kubsu.ru/course/view.php?id=780?params1=value1&params2=value2&params3=value3">Ссылку с тремя параметрами в URL</a
+        >
+      </li>
+      <li>
+        <a href="https://kubsu.ru/?id=section"
+          >ссылку с параметром id в URL</a
+        >
+      </li>
+      <li>
+        <a href="./oth.html">Относительную на страницу в текущем каталоге</a>
+      </li>
+      <li>
+        <a href="./about/smotr.html">Относительную на страницу в каталоге about</a
+        >
+      </li>
+      <li>
         <a href="./about/smotr.html">Относительную на страницу в каталоге уровнем выше текущего
         </a>
-    </li>
-	<li>
-        <a href="./about/two/smo.html">Относительную на страницу в каталоге двумя уровнями выше
-        </a>
-    </li>
-	<li>Контекстную в<a href="https://www.kubsu.ru">тексте абзаца
-    </a>
-    </li>
-	<li>
-        <a href="https://www.kubsu.ru/#section-conect">Ссылку на фрагмент страницы стороннего сайта</a>
-    </li>
-	<li>
-    Ссылки из прямоугольных и круглых областей картинки (HTML-тег map)
-    </li>
-	<a href=""><img src="/images/ring.jpg" usemap="#Map" width="200px" height="200px">
-    </a>
-	<a href=""><img src="/images/circyle.png" usemap="#2Map" width="200px" height="200px">
-    </a>
-		<map id="Map" name="Имя">
-			<area shape="rect" coords="100,0,200,150" href="https://moodle.kubsu.ru/course/view.php?id=780">
+      </li>
+      <li>
+        <a href="./about/two/smo.html">Относительную на страницу в каталоге двумя уровнями выше</a
+        >
+      </li>
+      <li>
+        <p>Университет <a href="https://kubsu.ru/">Кубгу</a> (контексная ссылка)</p>
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru/#section-content"
+          >ссылку на фрагмент страницы стороннего сайта</a
+        >
+      </li>
+      <li>
+        <img
+          src="./images/ring.jpg"
+          usemap="#Map"
+          alt="прямоугольник"
+          width="200"
+          height="200"
+        />
+      </li>
+      <li>
+        <img
+          src="./images/circyle.png"
+          usemap="#2Map"
+          alt="круг"
+          width="200"
+          height="200"
+        />
+
+        <map name="Map">
+          <area
+            href="https://moodle.kubsu.ru/course/view.php?id=780"
+            shape="rect"
+            coords="100,0,200,150"
+            alt="прямоугольная ссылка"
+          />
         </map>
-		<map id="2Map" name="Имя"><area shape="circle" coords="100,100,75" href="https://moodle.kubsu.ru/course/view.php?id=780">
+        <map name="2Map">
+          <area
+            href="https://moodle.kubsu.ru/course/view.php?id=780"
+            shape="circle"
+            coords="100,100,75"
+            alt="круглая ссылка"
+          />
         </map>
-	<li>
-        <a href="">Ссылку с пустым href
-        </li>
-    <li>
-        <a>Ссылка без href</a>
-    </li>
-    <li>
-        <a href="https://kubsu.ru/" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a>
-    </li>
-    <li>
-        <!--noindex--><a href="https://kubsu.ru/%22%3E">Ссылка по которой нельзя индексировать яндексу</a><!--/noindex-->
-    </li>
-    <li>
-        Список ссылок навигации сайта
-        <nav>
-            <ol>
-                <li><a href="/index.html" title="task">Ссылки</a></li>
-                <li><a href="#form" title="form">Форма</a></li>
-            </ol>
-        </nav>
-    </li>
-</ul> 
-<form>
-    <h1 id="form">Форма</h1>
+      </li>
+      <li><a href="">Ссылка с пустым href</a></li>
+      <li><a> Ссылка без href</a></li>
+      <li>
+        <a href="https://kubsu.ru/" rel="nofollow"
+          >Ссылка по которой нельзя следовать яндексу</a
+        >
+      </li>
+      <li>
+        <!--noindex--><a href="https://kubsu.ru/"
+          >Ссылка по которой нельзя индексировать яндексу</a
+        ><!--/noindex-->
+      </li>
+      <li>
+        <ol>
+          <li title="первый"><a href="./index.html">Список</a></li>
+        </ol>
+      </li>
+    </ul>
+    <form>
+      <h1 id="form">Форма</h1>
         <label for="fio">ФИО:</label>
         <input type="text" id="fio" name="fio"><br><br>
 
@@ -137,8 +152,6 @@
         <label for="contract">С контрактом ознакомлен/а</label><br><br>
 
         <input type="submit" value="Сохранить">
-</form>
-</body>
-</html>
-</body>
+    </form>
+  </body>
 </html>
