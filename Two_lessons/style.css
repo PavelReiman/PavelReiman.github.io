@@ -6,6 +6,7 @@
 	padding: 15px 15px;
 	box-sizing: border-box;
 	float: inline-start;
+	display: flex;
 }
 .logo{
 	float: left;
@@ -29,6 +30,7 @@
 	box-sizing: border-box;
 	text-align: center;
 	border: 2px solid red;
+	display: flex;
 }
 .one{
 	background: #BE0FF3;
