@@ -1,11 +1,10 @@
 .header{
-	max-width: 1408px;
+	max-width: 1000px;
 	margin: 0;
 	align-items: center;
 	padding: 15px 15px;
 	box-sizing: border-box;
 	float: inline-start;
-	display: flex;
 }
 .logo{
 	float: left;
@@ -21,14 +20,13 @@
 	margin-left: 50px;
 }
 .fotter{
-	max-width: 1408px;
+	max-width: 1000px;
 	margin: 0;
 	align-items: center;
 	padding: 15px 15px;
 	box-sizing: border-box;
 	text-align: center;
 	border: 2px solid red;
-	display: flex;
 }
 .one{
 	background: #BE0FF3;
