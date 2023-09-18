@@ -1,6 +1,5 @@
 .header{
 	max-width: 1000px;
-	padding: 0;
 	margin: 0;
 	align-items: center;
 	padding: 15px 15px;
@@ -23,7 +22,6 @@
 }
 .fotter{
 	max-width: 1000px;
-	padding: 0;
 	margin: 0;
 	align-items: center;
 	padding: 15px 15px;
