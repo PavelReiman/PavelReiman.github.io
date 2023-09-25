@@ -4,7 +4,7 @@
 	align-items: center;
 	padding: 15px 15px;
 	box-sizing: border-box;
-	border-radius: 30px;
+	border-radius: 15px;
 	background: rgb(255, 0, 0);
 }
 .logo{
@@ -19,6 +19,8 @@
 .ull li{
 	display: inline-block;
 	margin-left: 50px;
+	background: rgb(0, 0, 255);
+	border-radius: 15px;
 }
 .fotter{
 	max-width: 1000px;
@@ -28,6 +30,8 @@
 	box-sizing: border-box;
 	text-align: center;
 	border: 2px solid red;
+	border-radius: 15px;
+	background: rgb(0, 255, 0);
 }
 .one{
 	background: #BE0FF3;
