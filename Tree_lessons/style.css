@@ -9,10 +9,12 @@
 	float: left;
 }
 .ull{
-	float: right;
-	margin: 0;
-	padding: 0;
+	float: left;
+	margin: auto;
+	padding: inherit;
 	list-style: none;
+	height: 0px;
+	width: 170px;
 }
 .ull li{
 	display: inline-block;
@@ -21,7 +23,7 @@
 .body{
 	margin: 0;
 	padding: 15px 15px;
-	
+
 }
 .fotter{
 	margin: 0;
