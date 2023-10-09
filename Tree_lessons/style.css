@@ -9,18 +9,15 @@
 	float: left;
 }
 .ull{
-	float: left;
-	margin: auto;
-	padding: inherit;
+	float: right;
+	margin: 0;
+	padding: 0;
 	list-style: none;
-	height: 0px;
-	width: 170px;
 }
 .ull li{
 	display: inline-block;
 	margin-left: 50px;
 }
-
 .fotter{
 	margin: 0;
 	align-items: center;
