@@ -1,213 +1,240 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оформление</title>
-  </head>
-  <body>
+</head>
+<body>
     <header class="header">
-      <ul class="ull">
-        <li title="head"><a href="#head">Главная страница</a></li>
-        <li title="forma"><a href="#forma">Форма</a></li>
-        <li title="tables"><a href="#tables">Таблица</a></li>
-      </ul>
-      <a class="logo"><img src="kotara.jpg" alt="kot" width="90" height="90"></a>
-      <h1 id="head">Главная страница</h1>
+        <div class="container header__container">
+            <div class="header__content-left">
+                <div class="header__logo">
+                    <img  class="header__logo-img" ssrc="kotara.jpg" alt="kot" width="90" height="90">
+                </div>
+                <div class="header__title">
+                    Главная страница
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li title="head" class="header__menu-item">
+                        <a href="#head" class="header__menu-link">Главная страница</a>
+                    </li>
+                    <li title="forma" class="header__menu-item">
+                        <a href="#forma" class="header__menu-link">Форма</a>
+                    </li>
+                    <li title="tables" class="header__menu-item">
+                        <a href="#tables" class="header__menu-link">Таблица</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a>
-        </li>
-        <li>
-          <a href="https://www.kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https;</a
-          >
-        </li>
-        <li>
-          <a href="/images/image.jpg"
-            ><img src="/images/image.jpg" alt="image" width="300" height="200"
-          /></a>
-        </li>
-        <li>
-          <a href="/vnytri.html">Сокращенную ссылку на внутреннюю страницу</a>
-        </li>
-        <li><a href="./index.html">сокращенную ссылку на главную страницу</a></li>
-        <li><a href="#about">Ссылку на фрагмент текущей страницы</a></li>
-        <li>
-          <a href="https://moodle.kubsu.ru/course/view.php?id=780?params1=value1&params2=value2&params3=value3">Ссылку с тремя параметрами в URL</a
-          >
-        </li>
-        <li>
-          <a href="https://kubsu.ru/?id=section"
-            >ссылку с параметром id в URL</a
-          >
-        </li>
-        <li>
-          <a href="./oth.html">Относительную на страницу в текущем каталоге</a>
-        </li>
-        <li>
-          <a href="./about/smotr.html">Относительную на страницу в каталоге about</a
-          >
-        </li>
-        <li>
-          <a href="./about/smotr.html">Относительную на страницу в каталоге уровнем выше текущего
-          </a>
-        </li>
-        <li>
-          <a href="./about/two/smo.html">Относительную на страницу в каталоге двумя уровнями выше</a
-          >
-        </li>
-        <li>
-          <p>Университет <a href="https://kubsu.ru/">Кубгу</a> (контексная ссылка)</p>
-        </li>
-        <li>
-          <a href="https://www.kubsu.ru/#section-content"
-            >ссылку на фрагмент страницы стороннего сайта</a
-          >
-        </li>
-        <li>
-          <img
-            src="./images/ring.jpg"
-            usemap="#Map"
-            alt="прямоугольник"
-            width="200"
-            height="200"
-          />
-        </li>
-        <li>
-          <img
-            src="./images/circyle.png"
-            usemap="#2Map"
-            alt="круг"
-            width="200"
-            height="200"
-          />
+    <main class="main">
 
-          <map name="Map">
-            <area
-              href="https://moodle.kubsu.ru/course/view.php?id=780"
-              shape="rect"
-              coords="100,0,200,150"
-              alt="прямоугольная ссылка"
-            />
-          </map>
-          <map name="2Map">
-            <area
-              href="https://www.russianfood.com/recipes/recipe.php?rid=161654"
-              shape="circle"
-              coords="100,100,75"
-              alt="круглая ссылка"
-            />
-          </map>
-        </li>
-        <li><a href="">Ссылка с пустым href</a></li>
-        <li><a> Ссылка без href</a></li>
-        <li>
-          <a href="https://kubsu.ru/" rel="nofollow"
-            >Ссылка по которой нельзя следовать яндексу</a
-          >
-        </li>
-        <li>
-          <!--noindex--><a href="https://kubsu.ru/"
-            >Ссылка по которой нельзя индексировать яндексу</a
-          ><!--/noindex-->
-        </li>
-        <li>
-          <ol>
-            <li title="head"><a href="#head">Список</a></li>
-            <li title="forma"><a href="#forma">Форма</a></li>
-            <li title="tables"><a href="#tables">Таблица</a></li>
-          </ol>
-        </li>
-      </ul>
-      <h2 id="tables">Таблица</h2>
-      <table>
-        <tr class="one">
-          <th>Колонка1</th>
-          <th>Колонка2</th>
-          <th>Колонка3</th>
-          <th>Колонка4</th>
-        </tr>
-        <tr class="two">
-          <td colspan="2">Объедененая ячейка</td>
-          <td>Ячейка2</td>
-          <td>Ячейка3</td> 
-        </tr>
-        <tr class="three">
-          <td>Ячейка1</td>
-          <td colspan="2">Объедененая ячейка</td>
-          <td>Ячейка3</td>
-        </tr>
-        <tr class="two">
-          <td>Ячейка1</td>
-          <td>Ячейка2</td>
-          <td colspan="2">Объедененая ячейка</td>
-        </tr>
-        <tr class="three">
-          <td colspan="2">Объедененая ячейка</td>
-          <td>Ячейка2</td>
-          <td>Ячейка3</td> 
-        </tr>
-        <tr class="two">
-          <td>Ячейка1</td>
-          <td colspan="2">Объедененая ячейка</td>
-          <td>Ячейка3</td> 
-        </tr>
-        <tr class="three">
-          <td>Ячейка1</td>
-          <td>Ячейка2</td>
-          <td colspan="2">Объедененая ячейка</td>
-        </tr>
-      </table>
-      <form>
-        <h2 id="forma">Форма</h2>
-          <label for="fio">ФИО:</label>
-          <input type="text" id="fio" name="fio" required pattern="^[a-zA-Zа-яА-Я]+$"/><br><br>
+        <section class="flex-box-order">
+            <div class="container flex-box-order__container">
 
-          <label for="phone">Телефон:</label>
-          <input type="tel" id="phone" name="phone" required pattern="^[0-9]+$"/><br><br>
+                <!--======== UL ========-->
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required/><br><br>
+                <ul class="flex-box-order__list" id="id_ul">
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="https://www.kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https;</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="https://ru.wikipedia.org/wiki/Портал:Ботаника/Избранное_изображение/Архив/Октябрь_2008—ноябрь_2009">
+                            <img src="images/image.jpg" width="100" alt="Цветочек">
+                        </a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="/images/image.jpg">
+                        Сокращенная ссылка на внутреннюю страницу</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="/index.html">Сокращенная ссылка на главную страницу</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="#Unique_Id">Ссылка на кнопку внизу</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=400s&ab_channel=10Hours&t=10000">Ссылка с тремя параметрами в URL</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="https://ru.wikipedia.org/wiki/Бэтмен#toc">Ссылка с параметром id в URL</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="inner.html">Относительная ссылка на страницу в текущем каталоге</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="about/about_inner.html">Относительная ссылка на страницу в каталоге about</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <p>Кто мог знать, что <a class="flex-box-order__list-link" href="https://www.zoopark-rostov.ru/index.php/novosti-i-sobytiya/667-5-interesnykh-faktov-o-kapibarakh">капибары</a> завоюют такую любовь общественности?</p>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="https://stackoverflow.com/questions/396145/how-can-i-vertically-center-a-div-element-for-all-browsers-using-css#answers-header">Ссылка на фрагмент страницы стороннего сайта</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <p>
+                            Слева прямоугольник, справа круг, голосуй сейчас мой друг!
+                        </p>
+                        <img src="images/image2.jpg" alt="Бэтмен против Супермена" usemap="#Picture" width="300">
+                        <map name="Picture">
+                            <area shape="rect" coords="0,0,100,150" href="https://ru.wikipedia.org/wiki/Бэтмен" title="За Бэта!" alt="Бэтмен">
+                            <area shape="circle" coords="230,80,50" href="https://ru.wikipedia.org/wiki/Супермен" title="Я супер как и он!" alt="Супермен">
+                        </map>
+                    </li>
+                        
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="/">Ссылка с пустым href</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link">Ссылка без href</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="inner.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <!--noindex-->
+                            <a class="flex-box-order__list-link" href="inner.html">Текст этой ссылки запрещен для индексации поисковиками</a>
+                        <!--/noindex-->
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="">Ссылка на файл на сервере ftp с авторизацией</a>
+                    </li>
+                </ul>
 
-          <label for="birthdate">Дата рождения:</label>
-          <input type="date" id="birthdate" name="birthdate" required/><br><br>
 
-          <label>Пол:</label>
-          <input type="radio" id="male" name="gender" value="male" required/>
-          <label for="male">Мужской</label>
-          <input type="radio" id="female" name="gender" value="female" required/>
-          <label for="female">Женский</label><br><br>
+                <!--======== OL ==========-->
 
-          <label for="programming-language">Любимый язык программирования:</label>
-          <select id="programming-language" name="programming-language" multiple>
-              <option value="pascal">Pascal</option>
-              <option value="c">C</option>
-              <option value="cpp">C++</option>
-              <option value="javascript">JavaScript</option>
-              <option value="typescript">TypeScript</option>
-              <option value="php">PHP</option>
-              <option value="python">Python</option>
-              <option value="java">Java</option>
-              <option value="haskell">Haskell</option>
-              <option value="clojure">Clojure</option>
-              <option value="prolog">Prolog</option>
-              <option value="scala">Scala</option>
-          </select><br><br>
 
-          <label for="bio">Биография:</label><br>
-          <textarea id="bio" name="bio" rows="4" cols="50" required/></textarea><br><br>
+                <ol class="flex-box-order__ol-list" id="id_ol">
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="https://ru.wikipedia.org/wiki/C%2B%2B" title="Скорость и контроль!">C++</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="https://ru.wikipedia.org/wiki/Java" title="Мультиплатформенность наше всё!">Java</a>
+                    </li>
+                </ol>
 
-          <input type="checkbox" id="contract" name="contract" required/>
-          <label for="contract">С контрактом ознакомлен/а</label><br><br>
 
-          <input type="submit" value="Сохранить">
-      </form>
-    </nav>
-    <footer class="fotter">
-      Рейман П.А.
+                <!--======== TABLE ========-->
+
+
+                <table class="flex-box-order__table" id="id_table">
+                    <tr class="flex-box-order__table-odd">
+                        <th class="flex-box-order__table-header flex-box-order__table-item" colspan="4">
+                            Название таблицы
+                        </th>
+                    </tr>
+                    <tr class="flex-box-order__table-even">
+                        <th class="flex-box-order__table-item">Колонка 1</th>
+                        <th class="flex-box-order__table-item">Колонка 2</th>
+                        <th class="flex-box-order__table-item">Колонка 3</th>
+                        <th class="flex-box-order__table-item">Колонка 4</th>
+                    </tr>
+                    <tr class="flex-box-order__table-odd">
+                        <td class="flex-box-order__table-item" colspan="2">11</td>
+                        <td class="flex-box-order__table-item">31</td>
+                        <td class="flex-box-order__table-item">41</td>
+                    </tr>
+                    <tr class="flex-box-order__table-even">
+                        <td class="flex-box-order__table-item">12</td>
+                        <td class="flex-box-order__table-item">22</td>
+                        <td class="flex-box-order__table-item">32</td>
+                        <td class="flex-box-order__table-item">42</td>
+                    </tr>
+                    <tr class="flex-box-order__table-odd">
+                        <td class="flex-box-order__table-item" rowspan="2">13</td>
+                        <td class="flex-box-order__table-item">23</td>
+                        <td class="flex-box-order__table-item">33</td>
+                        <td class="flex-box-order__table-item">43</td>
+                    </tr>
+                    <tr class="flex-box-order__table-even">
+                        <td class="flex-box-order__table-item">24</td>
+                        <td class="flex-box-order__table-item" colspan="2">34</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <form id="id_form" action="/" method="POST" class="block">
+                    <h2 class="block_title">Форма</h2>
+                        <label>
+                            <input class="form_item" type="text" name="fio" placeholder="Введите ФИО" required pattern="^[А-Яа-яЁё\s]+$">
+                        </label>
+                        <br>
+                        <label>
+                            <input class="form_item" type="tel" name="tel" placeholder="Введите телефон" required pattern="^[ 0-9]+$">
+                        </label>
+                        <br>
+                        <label>
+                            <input class="form_item" type="email" name="email" placeholder="Введите email" required>
+                        </label>
+                        <br>
+                        <label class="form_text">
+                            Дата рождения:
+                            <input class="form_item" type="date" name="birthday" required>
+                        </label>
+                        <br>
+                        <p class="form_text">
+                            Пол:
+                            <br>
+                            <label class="form_text">
+                                <input type="radio" name="gender" value="male" required>
+                                Мужской
+                            </label>   
+                            <label>
+                                <input type="radio" name="gender" value="female" required>
+                                Женский
+                            </label>
+                        </p>
+                        <br>
+                        <label class="form_text">
+                            Выберете свои любимые языки:
+                            <br>
+                            <br>
+                            <select name="favorite_language" multiple required>
+                                <option value="Pascal">Pascal</option>
+                                <option value="C">C</option>
+                                <option value="C++">C++</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Python">Python</option>
+                                <option value="Java">Java</option>
+                                <option value="Haskel">Haskel</option>
+                                <option value="Clojure">Clojure</option>
+                                <option value="Prolog">Prolog</option>
+                                <option value="Scala">Scala</option>
+                            </select>
+                        </label>
+                        <br>
+                        <textarea name="biography" required>Расскажите немного о себе</textarea>
+                        <br>
+                        <label class="agreement">
+                            <input type="checkbox" name="agreement" required>
+                            С контрактом ознакомлен (а)
+                        </label>
+                        <br>
+                        <input class="form_item button" type="submit" id="Unique_Id" value="Отправить">
+                    </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__text">Иван Казаков</div>
+        </div>
     </footer>
-  </body>
+
+</body>
 </html>
