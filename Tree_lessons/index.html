@@ -115,29 +115,24 @@
                     </li>
                 </ul>
 
-
                 <!--======== OL ==========-->
-
 
                 <ol class="flex-box-order__ol-list" id="id_ol">
                     <li class="flex-box-order__list-item">
-                        <a class="flex-box-order__list-link" href="https://ru.wikipedia.org/wiki/C%2B%2B" title="Скорость и контроль!">C++</a>
+                        <a class="flex-box-order__list-link" href="#head" title="head">Список</a>
                     </li>
                     <li class="flex-box-order__list-item">
-                        <a class="flex-box-order__list-link" href="https://ru.wikipedia.org/wiki/Java" title="Мультиплатформенность наше всё!">Java</a>
+                        <a class="flex-box-order__list-link" href="#forma" title="forma">Форма</a>
+                    </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="#tables" title="tables">Таблица</a>
                     </li>
                 </ol>
 
-
                 <!--======== TABLE ========-->
 
-
+                <h2 id="tables">Таблица</h2>
                 <table class="flex-box-order__table" id="id_table">
-                    <tr class="flex-box-order__table-odd">
-                        <th class="flex-box-order__table-header flex-box-order__table-item" colspan="4">
-                            Название таблицы
-                        </th>
-                    </tr>
                     <tr class="flex-box-order__table-even">
                         <th class="flex-box-order__table-item">Колонка 1</th>
                         <th class="flex-box-order__table-item">Колонка 2</th>
@@ -145,25 +140,34 @@
                         <th class="flex-box-order__table-item">Колонка 4</th>
                     </tr>
                     <tr class="flex-box-order__table-odd">
-                        <td class="flex-box-order__table-item" colspan="2">11</td>
-                        <td class="flex-box-order__table-item">31</td>
-                        <td class="flex-box-order__table-item">41</td>
+                        <td class="flex-box-order__table-item" colspan="2">Объедененая ячейка</td>
+                        <td class="flex-box-order__table-item">Ячейка2</td>
+                        <td class="flex-box-order__table-item">Ячейка3</td>
                     </tr>
                     <tr class="flex-box-order__table-even">
-                        <td class="flex-box-order__table-item">12</td>
-                        <td class="flex-box-order__table-item">22</td>
-                        <td class="flex-box-order__table-item">32</td>
-                        <td class="flex-box-order__table-item">42</td>
+                        <td class="flex-box-order__table-item">Ячейка1</td>
+                        <td class="flex-box-order__table-item"colspan="2">Объедененая ячейка</td>
+                        <td class="flex-box-order__table-item">Ячейка3</td>
                     </tr>
                     <tr class="flex-box-order__table-odd">
-                        <td class="flex-box-order__table-item" rowspan="2">13</td>
-                        <td class="flex-box-order__table-item">23</td>
-                        <td class="flex-box-order__table-item">33</td>
-                        <td class="flex-box-order__table-item">43</td>
+                        <td class="flex-box-order__table-item" rowspan="2">Ячейка1</td>
+                        <td class="flex-box-order__table-item">Ячейка2</td>
+                        <td class="flex-box-order__table-item"colspan="2">Объедененая ячейка</td>
                     </tr>
                     <tr class="flex-box-order__table-even">
-                        <td class="flex-box-order__table-item">24</td>
-                        <td class="flex-box-order__table-item" colspan="2">34</td>
+                        <td class="flex-box-order__table-item"colspan="2">Объедененая ячейка</td>
+                        <td class="flex-box-order__table-item">Ячейка2</td>
+                        <td class="flex-box-order__table-item">Ячейка3</td>
+                    </tr>
+                    <tr class="flex-box-order__table-even">
+                        <td class="flex-box-order__table-item">Ячейка1</td>
+                        <td class="flex-box-order__table-item" colspan="2"colspan="2">Объедененая ячейка</td>
+                        <td class="flex-box-order__table-item">Ячейка3</td>
+                    </tr>
+                    <tr class="flex-box-order__table-even">
+                        <td class="flex-box-order__table-item">Ячейка1</td>
+                        <td class="flex-box-order__table-item">Ячейка2</td>
+                        <td class="flex-box-order__table-item" colspan="2"colspan="2">Объедененая ячейка</td>
                     </tr>
                 </table>
             </div>
@@ -171,7 +175,7 @@
 
         <section class="form-section">
             <div class="container">
-                <form id="id_form" action="/" method="POST" class="block">
+                <form id="form" action="/" method="POST" class="block">
                     <h2 class="block_title">Форма</h2>
                         <label>
                             <input class="form_item" type="text" name="fio" placeholder="Введите ФИО" required pattern="^[А-Яа-яЁё\s]+$">
@@ -238,9 +242,8 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <div class="footer__text">Иван Казаков</div>
+            <div class="footer__text">Рейман П.А.</div>
         </div>
     </footer>
-
 </body>
 </html>
