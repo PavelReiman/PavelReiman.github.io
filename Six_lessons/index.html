@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Оформление</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo"><img src="kotara.jpg" alt="kot" width="90" height="90"></a>
+      <h1 id="head">Главная страница</h1>
+    </header>
+    <hyd class ="hyd">
+    <ul class="ull">
+        <li title="head"><a href="#head">Главная страница</a></li>
+        <li title="forma"><a href="#forma">Форма</a></li>
+        <li title="tables"><a href="#tables">Таблица</a></li>
+      </ul>
+    </hyd>
+    <nav class="body">
+      <ul>
+        <li>
+          <a href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a>
+        </li>
+        <li>
+          <a href="https://www.kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https;</a
+          >
+        </li>
+        <li>
+          <a href="/images/image.jpg"
+            ><img src="/images/image.jpg" alt="image" width="300" height="200"
+          /></a>
+        </li>
+        <li>
+          <a href="/vnytri.html">Сокращенную ссылку на внутреннюю страницу</a>
+        </li>
+        <li><a href="./index.html">сокращенную ссылку на главную страницу</a></li>
+        <li><a href="#about">Ссылку на фрагмент текущей страницы</a></li>
+        <li>
+          <a href="https://moodle.kubsu.ru/course/view.php?id=780?params1=value1&params2=value2&params3=value3">Ссылку с тремя параметрами в URL</a
+          >
+        </li>
+        <li>
+          <a href="https://kubsu.ru/?id=section"
+            >ссылку с параметром id в URL</a
+          >
+        </li>
+        <li>
+          <a href="./oth.html">Относительную на страницу в текущем каталоге</a>
+        </li>
+        <li>
+          <a href="./about/smotr.html">Относительную на страницу в каталоге about</a
+          >
+        </li>
+        <li>
+          <a href="./about/smotr.html">Относительную на страницу в каталоге уровнем выше текущего
+          </a>
+        </li>
+        <li>
+          <a href="./about/two/smo.html">Относительную на страницу в каталоге двумя уровнями выше</a
+          >
+        </li>
+        <li>
+          <p>Университет <a href="https://kubsu.ru/">Кубгу</a> (контексная ссылка)</p>
+        </li>
+        <li>
+          <a href="https://www.kubsu.ru/#section-content"
+            >ссылку на фрагмент страницы стороннего сайта</a
+          >
+        </li>
+        <li>
+          <img
+            src="./images/ring.jpg"
+            usemap="#Map"
+            alt="прямоугольник"
+            width="200"
+            height="200"
+          />
+        </li>
+        <li>
+          <img
+            src="./images/circyle.png"
+            usemap="#2Map"
+            alt="круг"
+            width="200"
+            height="200"
+          />
+
+          <map name="Map">
+            <area
+              href="https://moodle.kubsu.ru/course/view.php?id=780"
+              shape="rect"
+              coords="100,0,200,150"
+              alt="прямоугольная ссылка"
+            />
+          </map>
+          <map name="2Map">
+            <area
+              href="https://www.russianfood.com/recipes/recipe.php?rid=161654"
+              shape="circle"
+              coords="100,100,75"
+              alt="круглая ссылка"
+            />
+          </map>
+        </li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a> Ссылка без href</a></li>
+        <li>
+          <a href="https://kubsu.ru/" rel="nofollow"
+            >Ссылка по которой нельзя следовать яндексу</a
+          >
+        </li>
+        <li>
+          <!--noindex--><a href="https://kubsu.ru/"
+            >Ссылка по которой нельзя индексировать яндексу</a
+          ><!--/noindex-->
+        </li>
+        <li>
+          <ol>
+            <li title="head"><a href="#head">Список</a></li>
+            <li title="forma"><a href="#forma">Форма</a></li>
+            <li title="tables"><a href="#tables">Таблица</a></li>
+          </ol>
+        </li>
+      </ul>
+      <h2 id="tables">Таблица</h2>
+      <table>
+        <tr class="one">
+          <th>Колонка1</th>
+          <th>Колонка2</th>
+          <th>Колонка3</th>
+          <th>Колонка4</th>
+        </tr>
+        <tr class="two">
+          <td colspan="2">Объедененая ячейка</td>
+          <td>Ячейка2</td>
+          <td>Ячейка3</td> 
+        </tr>
+        <tr class="three">
+          <td>Ячейка1</td>
+          <td colspan="2">Объедененая ячейка</td>
+          <td>Ячейка3</td>
+        </tr>
+        <tr class="two">
+          <td>Ячейка1</td>
+          <td>Ячейка2</td>
+          <td colspan="2">Объедененая ячейка</td>
+        </tr>
+        <tr class="three">
+          <td colspan="2">Объедененая ячейка</td>
+          <td>Ячейка2</td>
+          <td>Ячейка3</td> 
+        </tr>
+        <tr class="two">
+          <td>Ячейка1</td>
+          <td colspan="2">Объедененая ячейка</td>
+          <td>Ячейка3</td> 
+        </tr>
+        <tr class="three">
+          <td>Ячейка1</td>
+          <td>Ячейка2</td>
+          <td colspan="2">Объедененая ячейка</td>
+        </tr>
+      </table>
+      <form>
+        <h2 id="forma">Форма</h2>
+          <label for="fio">ФИО:</label>
+          <input type="text" id="fio" name="fio" required pattern="^[a-zA-Zа-яА-Я]+$"/><br><br>
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required pattern="^[0-9]+$"/><br><br>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required/><br><br>
+
+          <label for="birthdate">Дата рождения:</label>
+          <input type="date" id="birthdate" name="birthdate" required/><br><br>
+
+          <label>Пол:</label>
+          <input type="radio" id="male" name="gender" value="male" required/>
+          <label for="male">Мужской</label>
+          <input type="radio" id="female" name="gender" value="female" required/>
+          <label for="female">Женский</label><br><br>
+
+          <label for="programming-language">Любимый язык программирования:</label>
+          <select id="programming-language" name="programming-language" multiple>
+              <option value="pascal">Pascal</option>
+              <option value="c">C</option>
+              <option value="cpp">C++</option>
+              <option value="javascript">JavaScript</option>
+              <option value="typescript">TypeScript</option>
+              <option value="php">PHP</option>
+              <option value="python">Python</option>
+              <option value="java">Java</option>
+              <option value="haskell">Haskell</option>
+              <option value="clojure">Clojure</option>
+              <option value="prolog">Prolog</option>
+              <option value="scala">Scala</option>
+          </select><br><br>
+
+          <label for="bio">Биография:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="50" required/></textarea><br><br>
+
+          <input type="checkbox" id="contract" name="contract" required/>
+          <label for="contract">С контрактом ознакомлен/а</label><br><br>
+
+          <input type="submit" value="Сохранить">
+      </form>
+    </nav>
+    <footer class="fotter">
+      Рейман П.А.
+    </footer>
+  </body>
+</html>
