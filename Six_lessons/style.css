@@ -1,0 +1,40 @@
+.header{
+	max-width: 1000px;
+	margin: 0;
+	align-items: center;
+	padding: 15px 15px;
+	box-sizing: border-box;
+}
+.logo{
+	float: left;
+}
+.ull{
+	float: left;
+	margin: auto;
+	padding: inherit;
+	list-style: none;
+	height: 0px;
+	width: 170px;
+}
+.ull li{
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.fotter{
+	margin: 0;
+	align-items: center;
+	padding: 15px 15px;
+	box-sizing: border-box;
+	text-align: center;
+	border: 2px solid red;
+}
+.one{
+	background: #BE0FF3;
+}
+.two{
+	background: #530FF3;
+}
+.three{
+	background: #0FDCF3;
+}
