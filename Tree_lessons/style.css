@@ -166,8 +166,8 @@ a {
     height: 60px;
     padding: 15px 0;
 
-    background: #121212;
-    color: #fff;
+    background: rgb(251,233,255, 1.0);
+    color: rgb(0, 0, 0, 1.0);
 }
 
 .footer__container {
