@@ -11,9 +11,9 @@
         <div class="container header__container">
             <div class="header__content-left">
                 <div class="header__logo">
-                    <img  class="header__logo-img" src="kotara.jpg" alt="kot" width="90" height="90">
+                    <img  class="header__logo-img" src="./images/kot.jpg" alt="kot" width="90" height="90">
                 </div>
-                <div class="header__title">
+                <div class="header__title" id="head">
                     Главная страница
                 </div>
             </div>
@@ -23,10 +23,10 @@
                         <a href="#head" class="header__menu-link">Главная страница</a>
                     </li>
                     <li title="forma" class="header__menu-item">
-                        <a href="#forma" class="header__menu-link">Форма</a>
+                        <a href="#id_forma" class="header__menu-link">Форма</a>
                     </li>
                     <li title="tables" class="header__menu-item">
-                        <a href="#tables" class="header__menu-link">Таблица</a>
+                        <a href="#id_table" class="header__menu-link">Таблица</a>
                     </li>
                 </ul>
             </nav>
@@ -38,7 +38,7 @@
             <div class="container flex-box-order__container">
 
                 <!--======== UL ========-->
-
+                <h1 class="flex-box-order__title">Рабочий сайт</h1>
                 <ul class="flex-box-order__list" id="id_ul">
                     <li class="flex-box-order__list-item">
                         <a class="flex-box-order__list-link" href="http://www.kubsu.ru/">Абсолютную гиперссылку на главную страницу сайта kubsu.ru;</a>
@@ -48,7 +48,7 @@
                     </li>
                     <li class="flex-box-order__list-item">
                         <a class="flex-box-order__list-link" href="https://ru.wikipedia.org/wiki/Портал:Ботаника/Избранное_изображение/Архив/Октябрь_2008—ноябрь_2009">
-                            <img src="/images/image.jpg" alt="image" width="300" height="200">
+                            <img src="./images/image.jpg" alt="image" width="300" height="200">
                         </a>
                     </li>
                     <li class="flex-box-order__list-item">
@@ -119,19 +119,18 @@
 
                 <ol class="flex-box-order__ol-list" id="id_ol">
                     <li class="flex-box-order__list-item">
-                        <a class="flex-box-order__list-link" href="#head" title="head">Список</a>
+                        <a class="flex-box-order__list-link" href="#head" title="head"><u>Список</u></a>
                     </li>
                     <li class="flex-box-order__list-item">
-                        <a class="flex-box-order__list-link" href="#forma" title="forma">Форма</a>
+                        <a class="flex-box-order__list-link" href="#id_forma" title="forma"><u>Форма</u></a>
                     </li>
                     <li class="flex-box-order__list-item">
-                        <a class="flex-box-order__list-link" href="#tables" title="tables">Таблица</a>
+                        <a class="flex-box-order__list-link" href="#id_table" title="tables"><u>Таблица</u></a>
                     </li>
                 </ol>
 
                 <!--======== TABLE ========-->
 
-                <h2 id="tables">Таблица</h2>
                 <table class="flex-box-order__table" id="id_table">
                     <tr class="flex-box-order__table-even">
                         <th class="flex-box-order__table-item">Колонка 1</th>
@@ -175,7 +174,7 @@
 
         <section class="form-section">
             <div class="container">
-                <form id="form" action="/" method="POST" class="block">
+                <form id="id_forma" action="/" method="POST" class="block">
                     <h2 class="block_title">Форма</h2>
                         <label>
                             <input class="form_item" type="text" name="fio" placeholder="Введите ФИО" required pattern="^[А-Яа-яЁё\s]+$">
@@ -230,7 +229,7 @@
                         <br>
                         <label class="agreement">
                             <input type="checkbox" name="agreement" required>
-                            С контрактом ознакомлен (а)
+                            С информацией был ознакомлен (а)
                         </label>
                         <br>
                         <input class="form_item button" type="submit" id="Unique_Id" value="Отправить">
