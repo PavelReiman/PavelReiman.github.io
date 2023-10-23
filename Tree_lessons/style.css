@@ -16,7 +16,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: rgb(255,255,255, 1.0);
 }
 
 .container {
@@ -31,7 +31,7 @@ a {
 
 .header {
     background: rgb(255,183,64, 1.0);
-    color: rgb(0, 0, 0, 1.0);
+    color: rgb(255,255,255, 1.0);
 
     padding: 15px 0;
 }
