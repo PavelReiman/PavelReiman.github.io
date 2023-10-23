@@ -153,10 +153,10 @@ a {
 }
 
 .flex-box-order__table-odd {
-    background-color: #FFCA73;
+    background-color: rgb(255,202,115, 1.0);
 }
 .flex-box-order__table-even {
-    background-color: #BF8930;
+    background-color: rgb(191,137,48, 1.0);
 }
 
 
