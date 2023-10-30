@@ -70,12 +70,12 @@ select::-webkit-scrollbar {
 }
 
 .list li a:link {
-  color: #E1CBD7;
+  color: rgb(0,0,0, 1.0);
   text-decoration: none;
 }
 
 .list li a:visited {
-  color: #E1CBD7;
+  color: rgb(0,0,0, 1.0);
   text-decoration: none;
 }
 
