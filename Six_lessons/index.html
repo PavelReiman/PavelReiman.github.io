@@ -131,6 +131,9 @@
                     <li class="flex-box-order__list-item">
                         <a class="flex-box-order__list-link" href="#tables" title="tables">Таблица</a>
                     </li>
+                    <li class="flex-box-order__list-item">
+                        <a class="flex-box-order__list-link" href="#calc" title="calc">Калькулятор</a>
+                    </li>
                 </ol>
 
                 <!--======== TABLE ========-->
@@ -241,13 +244,16 @@
                     </form>
             </div>
         </section>
-        <h2 class="calculator" id="calculator">Составьте свой заказ</h2>
+        <h2 class="calc" id="calc">Составьте свой заказ</h2>
         <form>
             <p>Выберите товар:
                 <select name="myselect" required>
-                    <option value="1">Картошка 78 руб.</option>
-                    <option value="2">Американо 33 руб.</option>
-                    <option value="3">Наполеон 117 руб.</option>
+                    <option value="1">Кола 0.5 л 60 руб.</option>
+                    <option value="2">Бургер Конг 170 руб.</option>
+                    <option value="3">Чикен Фри 250 руб.</option>
+                    <option value="4">Королевский завтрак 1500 руб.</option>
+                    <option value="5">Королевский обед 2500 руб.</option>
+                    <option value="6">Королевский ужин 10000 руб.</option>
                 </select>
             </p>
 
@@ -257,20 +263,23 @@
                 <label><input type="radio" name="myradio" value="40">Кетчуп</label>
                 <label><input type="radio" name="myradio" value="40">Сырный соус</label>
                 <label><input type="radio" name="myradio" value="40">Чесночный соус</label>
+                <label><input type="radio" name="myradio" value="40">Соус барбекю</label>
+                <label><input type="radio" name="myradio" value="40">Соус из красной икры</label>
+                <label><input type="radio" name="myradio" value="40">Соус из черной икры</label>
+                <label><input type="radio" name="myradio" value="40">Зеленый соус</label>
             </div>
 
             <p class="mycheckbox" id="mycheckbox">
                 <label>
-                    Нужен пакетик? <input value="10" type="checkbox">
+                    Без пакета <input value="10" type="checkbox">
                 </label>
             </p>
 
         </form>
 
-        <button id="button">Calculate</button>
+        <button id="button">Сощитать</button>
         <p id="finalPrice"></p>
-        <script src="calculate.js"></script>
-    </div>
+        <script src="calcul.js"></script>
     </main>
 
     <footer class="footer">
