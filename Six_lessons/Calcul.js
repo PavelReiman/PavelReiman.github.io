@@ -66,6 +66,15 @@ window.addEventListener('DOMContentLoaded', function (event) {
         let select = event.target;
         let radios = document.getElementById("myradios");
         console.log(select.value);
+
+        if (select.value === "1") {
+            radios.style.display = "none";
+            c.parentNode.style.display = "none";
+        }
+        else {
+            radios.style.display = "block";
+            c.parentNode.style.display = "block";
+        }
     });
 
     let r = document.querySelectorAll(".myradios input[type=radio]");
