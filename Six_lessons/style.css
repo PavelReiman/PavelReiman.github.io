@@ -19,10 +19,11 @@
   select::-webkit-scrollbar {
     display: none;
   }
-  .header {
-      color: rgb(0, 0, 0, 1.0);;
+  header {
+      color: rgb(0, 0, 0, 1.0);
+      box-shadow: rgba(255, 0, 0, 0.514) 0px 14px 28px, rgba(255, 0, 0, 0.22) 0px 10px 10px;
   }
-  .header bg-light{
+  header bg-light{
     background-color: #0080ff;
   }
   .logo {
