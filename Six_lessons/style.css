@@ -15,7 +15,7 @@
     width: 200px;
     border-radius: 15px;
     margin-bottom: 10px;
-    box-shadow: rgba(255, 0, 0, 0.514) 0px 14px 28px, rgba(255, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(255, 0, 179, 0.514) 0px 14px 28px, rgba(250, 26, 183, 0.559) 0px 10px 10px;
   }
   select::-webkit-scrollbar {
     display: none;
