@@ -7,17 +7,18 @@
   body {
     --bs-body-color-rgb: rgb(255,159,0, 1.0);
   }
+  .bg-light {
+    background-color: #394c5f!important;
+  }
   h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 30px;
   }
   select, textarea {
-    border: 2px solid #580342;
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    border-radius: 20px;
+    border: 5px solid #cd82ba;
+    width: 200px;
+    border-radius: 15px;
     margin-bottom: 10px;
   }
   select::-webkit-scrollbar {
@@ -135,11 +136,11 @@
   }
   
   .table_old {
-    background-color: rgb(255,202,115, 1.0);
+    background-color: rgb(231,42,220, 1.0);
   }
   
   .table_even {
-    background-color: rgb(191,137,48, 1.0);
+    background-color: rgb(251, 135, 244, 1.0);
   }
   
   .table_item {
