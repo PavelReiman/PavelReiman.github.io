@@ -25,9 +25,15 @@ class Product {
     }
 
     getFinalPrice() {
-        if(this.name==="Наполеон")
+        if(this.name==="Бургер Конг")
             return this.pricePerOne * this.quantity
-        if(this.name==="Американо")
+        if(this.name==="Чикен Фри")
+            return this.pricePerOne * this.quantity
+        if(this.name==="Королевский завтрак")
+            return this.pricePerOne * this.quantity
+        if(this.name==="Королевский обед")
+            return this.pricePerOne * this.quantity
+        if(this.name==="Королевский ужин")
             return this.pricePerOne * this.quantity + this.bag;
         return this.pricePerOne * this.quantity + this.bag + this.souce;
     }
