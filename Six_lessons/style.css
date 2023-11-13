@@ -131,13 +131,14 @@
   
   .table_header {
     text-align: center;
+    background-color: rgba(255, 0, 255, 0.637);
   }
   
-  .odd {
+  .table_old {
     background-color: rgb(255,202,115, 1.0);
   }
   
-  .even {
+  .table_even {
     background-color: rgb(191,137,48, 1.0);
   }
   
@@ -173,7 +174,7 @@
   }
   
   .footer {
-    background: rgb(166,104,0, 1.0);
+    background: rgb(240,175,255, 1.0);
   }
   
   .footer__text {
