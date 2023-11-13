@@ -4,9 +4,7 @@
     padding: 0;
     border: 0;
   }
-  .bg-light {
-    background-color: #394c5f!important;
-  }
+  
   h1 {
     font-family: Times New Roman, Helvetica, sans-serif;
     text-align: center;
@@ -23,6 +21,9 @@
   }
   .header {
       color: rgb(0, 0, 0, 1.0);;
+  }
+  .header bg-light{
+    background-color: #394c5f!important;
   }
   .logo {
     float: left;
