@@ -19,7 +19,7 @@
   select::-webkit-scrollbar {
     display: none;
   }
-  quantity, textarea{
+  textarea{
     border: 5px solid #cd82ba;
     width: 200px;
     border-radius: 15px;
