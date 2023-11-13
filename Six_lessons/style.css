@@ -10,7 +10,7 @@
     text-align: center;
     margin: 30px;
   }
-  select, textarea, quantity {
+  select, textarea {
     border: 5px solid #ff00bf;
     width: 200px;
     border-radius: 15px;
