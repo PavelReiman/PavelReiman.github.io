@@ -44,7 +44,7 @@
   }
   .name {
     color: #945ef3;
-    font-family: Arial;
+    font-family:Times New Roman;
     font-size: 20px;
     margin-left: 20px;
     margin-top: 32px;
@@ -63,7 +63,7 @@
     float: left;
     margin-right: 30px;
     list-style-type: none;
-    font-family: Arial;
+    font-family: Times New Roman;
     font-size: 18px;
   }
   
