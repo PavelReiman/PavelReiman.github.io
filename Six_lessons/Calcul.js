@@ -26,13 +26,13 @@ class Product {
 
     getFinalPrice() {
         if(this.name==="Бургер Конг")
-            return this.pricePerOne * this.quantity
+            return this.pricePerOne * this.quantity + this.bag;
         if(this.name==="Чикен Фри")
-            return this.pricePerOne * this.quantity
+            return this.pricePerOne * this.quantity + this.bag;
         if(this.name==="Королевский завтрак")
-            return this.pricePerOne * this.quantity
+            return this.pricePerOne * this.quantity + this.bag;
         if(this.name==="Королевский обед")
-            return this.pricePerOne * this.quantity
+            return this.pricePerOne * this.quantity + this.bag;
         if(this.name==="Королевский ужин")
             return this.pricePerOne * this.quantity + this.bag;
         return this.pricePerOne * this.quantity + this.bag + this.souce;
@@ -67,9 +67,18 @@ window.addEventListener('DOMContentLoaded', function (event) {
         let radios = document.getElementById("myradios");
         console.log(select.value);
 
-        if (select.value === "3") {
+        if (select.value === "6") {
             radios.style.display = "none";
             c.parentNode.style.display = "none";
+        } else if(select.value === "5") {
+            radios.style.display = "none";
+            c.parentNode.style.display = "block";
+        } else if(select.value === "4") {
+            radios.style.display = "none";
+            c.parentNode.style.display = "block";
+        } else if(select.value === "3") {
+            radios.style.display = "none";
+            c.parentNode.style.display = "block";
         } else if(select.value === "2") {
             radios.style.display = "none";
             c.parentNode.style.display = "block";
