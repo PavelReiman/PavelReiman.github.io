@@ -67,9 +67,18 @@ window.addEventListener('DOMContentLoaded', function (event) {
         let radios = document.getElementById("myradios");
         console.log(select.value);
 
-        if (select.value === "1") {
+        if (select.value === "6") {
             radios.style.display = "none";
             c.parentNode.style.display = "none";
+        } else if(select.value === "5") {
+            radios.style.display = "none";
+            c.parentNode.style.display = "block";
+        } else if(select.value === "4") {
+            radios.style.display = "none";
+            c.parentNode.style.display = "block";
+        }else if(select.value === "1") {
+            radios.style.display = "none";
+            c.parentNode.style.display = "block";
         }
         else {
             radios.style.display = "block";
