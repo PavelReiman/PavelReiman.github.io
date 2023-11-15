@@ -260,23 +260,29 @@
           </form>
         </section>
         <section class="order-4">
-          <h1>Оставить заказ</h1>
-          <label for="productSelect">Выберите товар:</label>
-          <select id="productSelect">
-            <option value="1">Кола 0.5 л 60 руб.</option>
-            <option value="2">Бургер Конг 170 руб.</option>
-            <option value="3">Чикен Фри 250 руб.</option>
-            <option value="4">Королевский завтрак 1500 руб.</option>
-            <option value="5">Королевский обед 2500 руб.</option>
-            <option value="6">Королевский ужин 10000 руб.</option>
-          </select>
-            <br>
-          <label for="quantity">Введите количество товара:</label>
-          <input type="text" id="quantity" placeholder="Количество товара" />
+          <h1 id="productSelect">Услуги</h1>
+          <label for="serviceType">Выберите услугу:</label>
+          <input type="radio" name="serviceType" value="type1" id="type1" data-price="5"> Осмотр электродвигателя.
+          <input type="radio" name="serviceType" value="type2" id="type2" data-price="10"> Ремонт электродвигателя.
+          <input type="radio" name="serviceType" value="type3" id="type3" data-price="15"> Усиление электродвигателя
 
-          <button class="btn btn-primary" onclick="calculateTotal()">Сощитать стоимость</button>
+          <div id="optionsDiv">
+            <label for="optionsSelect">Опции:</label>
+            <select id="optionsSelect">
+              <option value="option1" data-price="5">Перемотка ротора - 2000 ₽</option>
+              <option value="option2" data-price="10">Перемотка статера - 3000 ₽</option>
+            </select>
+          </div>
 
-          <p>Стоимость заказа: ₽<span id="totalCost">0</span></p>
+          <div id="propertiesDiv">
+            <label for="propertyCheckbox">Дополнительное свойство:</label>
+            <input type="checkbox" id="propertyCheckbox" data-price="5"> Установка вибропластин - 10000 ₽
+          </div>
+
+          <label for="quantity">Введите количество услуг:</label>
+          <input type="text" id="quantity" placeholder="Количество услуг">
+
+          <p>Стоимость заказа: <span id="totalCost">0 ₽</span></p>
         </section>
       </div>
     </main>
