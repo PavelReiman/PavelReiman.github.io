@@ -1,35 +1,84 @@
-function calculateTotal() {
-    const productSelect = document.getElementById("productSelect");
-    const selectedProduct =
-      productSelect.options[productSelect.selectedIndex].value;
+document.addEventListener("DOMContentLoaded", function () {
+  const quantityInput = document.getElementById("quantity");
+  const totalCostSpan = document.getElementById("totalCost");
 
-    const quantity = parseFloat(document.getElementById("quantity").value);
+  function calculateTotal() {
+    let totalCost = 0;
 
-    let price = 0;
-    switch (selectedProduct) {
-        case "1":
-        price = 60;
-        break;
-        case "2":
-        price = 170;
-        break;
-        case "3":
-        price = 250;
-        break;
-        case "4":
-        price = 1500;
-        break;
-        case "5":
-        price = 2500;
-        break;
-        case "6":
-        price = 10000;
-        break;
-      default:
-        price = 0;
+    const selectedServiceType = document.querySelector(
+      'input[name="serviceType"]:checked'
+    );
+    if (selectedServiceType) {
+      totalCost += parseFloat(selectedServiceType.getAttribute("data-price"));
     }
 
-    const totalCost = price * quantity;
+    const optionsSelect = document.getElementById("optionsSelect");
+    if (optionsSelect && optionsSelect.style.display !== "none") {
+      const selectedOption = optionsSelect.options[optionsSelect.selectedIndex];
+      totalCost += parseFloat(selectedOption.getAttribute("data-price"));
+    }
 
-    document.getElementById("totalCost").textContent = totalCost;
+    const propertyCheckbox = document.getElementById("propertyCheckbox");
+    if (
+      propertyCheckbox &&
+      propertyCheckbox.checked &&
+      propertyCheckbox.style.display !== "none"
+    ) {
+      totalCost += parseFloat(propertyCheckbox.getAttribute("data-price"));
+    }
+
+    let quantity = parseFloat(quantityInput.value);
+
+    if (isNaN(quantity) || quantity < 0) {
+      quantity = 0;
+    }
+
+    totalCost *= quantity;
+
+    if (!isNaN(totalCost)) {
+      totalCostSpan.textContent = totalCost;
+    } else {
+      totalCostSpan.textContent = "0";
+    }
   }
+
+  function updateOptionsAndProperties() {
+    const selectedServiceType = document.querySelector(
+      'input[name="serviceType"]:checked'
+    ).value;
+    const optionsDiv = document.getElementById("optionsDiv");
+    const propertiesDiv = document.getElementById("propertiesDiv");
+
+    if (selectedServiceType === "type1") {
+      optionsDiv.style.display = "none";
+      propertiesDiv.style.display = "none";
+    } else if (selectedServiceType === "type2") {
+      optionsDiv.style.display = "block";
+      propertiesDiv.style.display = "none";
+    } else {
+      optionsDiv.style.display = "none";
+      propertiesDiv.style.display = "block";
+    }
+  }
+
+  function handleInput() {
+    updateOptionsAndProperties();
+    calculateTotal();
+  }
+
+  document
+    .querySelectorAll('input[name="serviceType"]')
+    .forEach(function (radio) {
+      radio.addEventListener("change", handleInput);
+    });
+
+  document
+    .getElementById("optionsSelect")
+    .addEventListener("change", calculateTotal);
+  document
+    .getElementById("propertyCheckbox")
+    .addEventListener("change", calculateTotal);
+  quantityInput.addEventListener("input", calculateTotal);
+
+  handleInput();
+});
