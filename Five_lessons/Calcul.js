@@ -27,7 +27,7 @@ function calculateTotal() {
           price = 0;
   }
   if (quantity < 0) {
-      document.getElementById("totalCost").textContent = "Invalid quantity";
+      document.getElementById("totalCost").textContent = "0";
   } else {
       const totalCost = price * quantity;
       document.getElementById("totalCost").textContent = totalCost;
