@@ -27,7 +27,7 @@ function calculateTotal() {
           price = 0;
   }
   if (quantity < 0) {
-      document.getElementById("totalCost").textContent = "Мы бесплатно не будем ничего делать ";
+      document.getElementById("totalCost").textContent = "Мы бесплатно не будем ничего делать";
   } else {
       const totalCost = price * quantity;
       document.getElementById("totalCost").textContent = totalCost;
