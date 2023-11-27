@@ -22,7 +22,7 @@
   }
   header {
       color: rgb(0, 0, 0, 1.0);
-      box-shadow: rgba(255, 0, 0, 0.514) 0px 14px 28px, rgba(255, 0, 0, 0.22) 0px 10px 10px;
+      box-shadow: rgba(255, 0, 179, 0.514) 0px 14px 28px, rgba(250, 26, 183, 0.559) 0px 10px 10px;
   }
   header bg-light{
     background-color: #0080ff;
@@ -249,11 +249,13 @@
 .slider .slick-arrow.slick-prev{
     left: 0;
     background: url('slid/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    box-shadow: rgba(255, 0, 179, 0.514) 0px 14px 28px, rgba(250, 26, 183, 0.559) 0px 10px 10px;
     
 }
 .slider .slick-arrow.slick-next{
     right: 0;
     background: url('slid/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+    box-shadow: rgba(255, 0, 179, 0.514) 0px 14px 28px, rgba(250, 26, 183, 0.559) 0px 10px 10px;
 }
 .slider .slick-arrow.slick-disabled{
     opacity: 0.2;
@@ -272,8 +274,9 @@
     font-size: 0;
     width: 10px;
     height: 10px;
-    background-color: #000000;
+    background-color: rgba(255, 0, 255, 0.637);
     border-radius: 50%;
+    box-shadow: rgba(255, 0, 179, 0.514) 0px 14px 28px, rgba(250, 26, 183, 0.559) 0px 10px 10px;
 }
 
 .slider .slick-dots li.slick-active button{
