@@ -286,3 +286,75 @@
 .slider__item img{
     max-width: 100%;
 }
+
+/*popup*/
+
+.popup-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(130, 69, 69, 0.5);
+    display: none;
+    align-items: center;
+
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup-content {
+    align-items: center;
+    background-color: #ff0000;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 7px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.submit-button {
+    margin-top: 10px;
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: rgb(0, 0, 0);
+}
