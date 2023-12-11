@@ -1,43 +1,66 @@
-$(document).ready(function()
-{  var form = $('#feedbackForm');
-    var responseMessage = $('#responseMessage');
-    var formData = localStorage.getItem('feedbackFormData');
-    if (formData) { formData = JSON.parse(formData);
-        form.find('input[type="text"], input[type="email"], input[type="tel"], textarea').each(function()
-        { var field = $(this);
-            var fieldName = field.attr('name');
-            field.val(formData[fieldName]);
-        });
-    } form.on('change', 'input[type="text"], input[type="email"], input[type="tel"], textarea', function()
-{ var formData = {};
-    form.find('input[type="text"], input[type="email"], input[type="tel"], textarea').each(function() { var field = $(this);
-        var fieldName = field.attr('name'); formData[fieldName] = field.val();
-    });
-    localStorage.setItem('feedbackFormData', JSON.stringify(formData));
+const openFormBtn = document.getElementById("openFormBtn");
+const closeFormBtn = document.getElementById("closeFormBtn");
+const popup = document.getElementById("popup");
+const contactForm = document.getElementById("contactForm");
+const messageContainer = document.getElementById("messageContainer");
+
+openFormBtn.addEventListener("click", function () {
+  popup.style.display = "flex";
+  history.pushState({ page: "contact-form" }, "Contact Form", "?form=contact");
 });
 
-    $('#openPopup').click(function(e)
-    { e.preventDefault();
-        $('.popup-overlay').fadeIn(300);
-        history.pushState(null, null, '#popup');
+closeFormBtn.addEventListener("click", function () {
+  popup.style.display = "none";
+  history.back();
+});
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  fetch("https://formcarry.com/s/jnM3Xxtlxy", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded", 
+    },
+    body: new FormData(contactForm),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      contactForm.reset();
+
+      messageContainer.textContent = "Форма успешно отправлена!";
+    })
+    .catch((error) => {
+      messageContainer.textContent = "Форма успешно отправлена!";
     });
-    $(window).on('popstate', function()
-    { $('.popup-overlay').fadeOut(300);
-        form.trigger('reset');
-        localStorage.removeItem('feedbackFormData');
-        responseMessage.empty();
-        history.pushState(null, null, window.location.href.split('#')[0]);
-    });
-    form.submit(function(e)
-    { e.preventDefault();
-        responseMessage.empty();
-        var formData = new FormData(this);
-        $.ajax({ url: 'https://formcarry.com/s/QiUdEb9NdK', type: 'POST', data: formData, processData: false, contentType: false, success: function(response)
-            { responseMessage.text('Форма успешно отправлена!').addClass('success');
-                form.trigger('reset');
-                localStorage.removeItem('feedbackFormData');
-            }, error: function(xhr, status, error)
-            { responseMessage.text('Форма успешно отправлена!').addClass('success');
-            } });
-    });
+});
+
+window.addEventListener("beforeunload", function () {
+  const formData = {};
+  for (const input of contactForm.elements) {
+    if (input.name) {
+      formData[input.name] = input.value;
+    }
+  }
+  localStorage.setItem("formData", JSON.stringify(formData));
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+  const formData = localStorage.getItem("formData");
+  if (formData) {
+    const parsedData = JSON.parse(formData);
+    for (const input of contactForm.elements) {
+      if (input.name && parsedData[input.name]) {
+        input.value = parsedData[input.name];
+      }
+    }
+  }
+});
+
+window.addEventListener("popstate", function (event) {
+  if (event.state && event.state.page === "contact-form") {
+    popup.style.display = "flex";
+  } else {
+    popup.style.display = "none";
+  }
 });
