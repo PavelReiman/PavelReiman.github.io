@@ -121,17 +121,17 @@ h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  font-size: 40px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 100;
+  letter-spacing: 30px;
   text-transform: uppercase;
 }
 
 #header .logo a {
-  color: #fff;
+  color: #ff9900;
 }
 
 #header .logo a span {
