@@ -1394,7 +1394,7 @@ button.btn-primary {
 --------------------------------------------------------------*/
 #footer {
   background: #ff9900;
-  padding: 1%;
+  padding: 1PX;
   color: #000000;
   font-size: 20px;
 }
