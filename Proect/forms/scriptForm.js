@@ -24,7 +24,7 @@ function submitForm() {
     };
 
     // Отправляем данные на Formcarry
-    fetch('https://formcarry.com/s/EHtMLew1to', {
+    fetch('https://formcarry.com/s/jnM3Xxtlxy', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
