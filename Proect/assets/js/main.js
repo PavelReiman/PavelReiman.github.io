@@ -283,4 +283,4 @@
    */
   new PureCounter();
 
-})
+})()
